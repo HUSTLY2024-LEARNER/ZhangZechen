@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七七的世界</title>
+    <style>
+        /* 设置全局样式 */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        /* 添加样式以实现切换动画 */
+        .page-transition {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* 隐藏其他页面 */
+        .hidden {
+            display: none;
+        }
+        /* 设置 body 样式 */
+        body {
+          background-color: #e5c3c3;
+          background-image: url("imagesrc/qiqi.webp");
+          background-size: cover;
+          font-family: Arial, sans-serif;
+          position: relative;
+        }
+
+        /* 设置 header 样式 */
+        header {
+          position: absolute;
+
+          top: 50%;
+          left: 50%;
+          transform: translate(-180%, -100%);
+          background-color: rgba(255, 255, 255, 0.7);
+          padding: 50px;
+          text-align: center;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+          font-size: 36px;
+          font-weight: bold;
+          color: #333;
+        }
+
+        /* 设置 nav 样式 */
+        nav {
+          background-color: #333;
+          padding: 10px;
+        }
+
+        nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+        }
+
+        nav li {
+          margin: 0 20px;
+        }
+
+        nav a {
+          color: #fff;
+          text-decoration: none;
+    
+          font-weight: bold;
+          transition: color 0.3s;
+          width: 300px; /* 设置宽度为300像素，根据需要调整 */
+    height: 500px; /* 设置高度为200像素，根据需要调整 */
+    font-size: 30px; /* 设置字体大小为24像素，根据需要调整 */
+        }
+
+        nav a:hover {
+          color: #007bff;
+        }
+
+        /* 设置 main 样式 */
+        main {
+          max-width: 800px;
+          margin: 120px auto 50px;
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        main img {
+          width: 100px;
+          height: 50px;
+        }
+
+        main p {
+          font-size: 24px;
+          font-weight: bold;
+          color: #333;
+          margin-top: 20px;
+        }
+
+        main h2 {
+          font-size: 36px;
+          font-weight: bold;
+          color: #333;
+          margin-top: 20px;
+        }
+
+        /* 设置 footer 样式 */
+        footer {
+          position: absolute;
+          bottom: 2;
+          width: 100%;
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我是七七是一只僵尸</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="web/intro.htm">简简单单的自我介绍</a></li>
+            <li><a href="web/notes.htm">七七的记事本</a></li>
+            <li><a href="web/2277.htm">一二七七，二二七七</a></li>
+            <li><a href="web/play.htm">一起来玩吧</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img src="/webdesign/imagesrc/genshin.png" style="width: 500px; height: 200px;">
+        <style>
+            /* 将<p>中的文本加粗并放大 */
+            p {
+                font-weight: bold; /* 加粗 */
+                font-size: 1.2em; /* 调整字体大小，这里用em作为单位 */
+            }
+        </style>
+        <p>启动！！！</p>
+        <h2>欢迎来到我的世界</h2>
+        <p>你好，旅行者</p>
+        <p>好，旅行者</p>
+        <p>，旅行者</p>
+        <p>旅行者</p>
+        <p>行者</p>
+        <p>者</p>
+    </main>
+    <footer>
+        <span id="date"></span>
+        <p>&copy; My Website</p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // 获取当前日期
+                var date = new Date();
+                var year = date.getFullYear();
+                var month = date.getMonth() + 1;
+                var day = date.getDate();
+    
+                // 将日期显示在页面中
+                var dateSpan = document.getElementById("date");
+                dateSpan.innerHTML =   year + " 年 " + month + " 月 " + day + " 日";
+            });
+        </script>
+    </footer>
+</body>
+</html>
